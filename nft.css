@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --bg-color: hsl(217, 54%, 11%);
+  --bg-information: hsl(216, 50%, 16%);
+  --fn-color: hsl(0, 0%, 100%);
+  --fn-color-value: hsl(178, 100%, 50%);
+  --fn-p-size-18px: 18px;
+  --fn-p-color: hsl(215, 51%, 70%);
+  --ff-primary: "Outfit", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+.container-information {
+  box-shadow: 5px 4px 40px 2px #000000;
+  gap: 15px;
+  padding: 20px 20px 30px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--bg-information);
+  width: 340px;
+  color: var(--fn-color);
+}
+.container-information img {
+  border-radius: 10px;
+}
+.container-information h3 {
+  font-family: var(--ff-primary);
+  text-align: left;
+  font-weight: 600;
+}
+.container-information .p1 {
+  text-align: left;
+  font-size: var(--fn-p-size-18px);
+  color: var(--fn-p-color);
+  font-family: var(--ff-primary);
+}
+.icon {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+.icon img {
+  width: 10%;
+  height: 10%;
+  object-fit: contain;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+}
+.clock img {
+  width: auto;
+  height: auto;
+}
+
+.crypto {
+  justify-content: space-between;
+  gap: 110px;
+  display: flex;
+  align-items: center;
+}
+.crypto .value {
+  color: var(--fn-color-value);
+  font-family: var(--ff-primary);
+}
+.crypto p {
+  color: var(--fn-p-color);
+  font-family: var(--ff-primary);
+  width: 80px;
+}
+
+.profile {
+  border-top: 1px solid var(--fn-p-color);
+  padding-top: 10px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  border: 2px solid var(--fn-color);
+  border-radius: 100%;
+  width: 30px;
+}
+.profile .p3 {
+  font-family: var(--ff-primary);
+  color: var(--fn-p-color);
+}
+.profile .p4 {
+  font-family: var(--ff-primary);
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
